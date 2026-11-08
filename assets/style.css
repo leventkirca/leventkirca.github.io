@@ -1,0 +1,148 @@
+/* Levent Kırca — academic homepage */
+:root {
+  --accent: #2f5d3a;
+  --accent-light: #e8f0ea;
+  --text: #222;
+  --muted: #5f6368;
+  --border: #e2e2e2;
+  --bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+
+/* ---------- Top bar ---------- */
+.topbar {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.topbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.site-name { font-weight: 700; font-size: 1.1rem; color: var(--text); }
+.site-name:hover { text-decoration: none; color: var(--accent); }
+
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+nav a {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+nav a:hover { background: var(--accent-light); text-decoration: none; }
+nav a.active { background: var(--accent); color: #fff; }
+
+/* ---------- Profile block ---------- */
+.profile {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding: 32px 0 24px;
+  border-bottom: 1px solid var(--border);
+}
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid var(--accent-light);
+}
+.profile-initials {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.profile h2 { margin: 0 0 2px; font-size: 1.6rem; }
+.profile .role { margin: 0; color: var(--muted); font-style: italic; }
+.profile .affil { margin: 2px 0 10px; }
+.profile-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.93rem; }
+
+/* ---------- Main content ---------- */
+main { padding: 24px 0 40px; }
+main h1 { font-size: 1.7rem; margin: 8px 0 2px; color: var(--accent); }
+main .subtitle { color: var(--muted); margin: 0 0 18px; }
+main h2 { font-size: 1.25rem; margin: 28px 0 10px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+main h3 { font-size: 1.05rem; margin: 18px 0 6px; }
+main ul, main ol { padding-left: 22px; }
+main li { margin-bottom: 8px; }
+
+.entry-title { font-weight: 600; }
+.meta { color: var(--muted); }
+
+/* ---------- Publications ---------- */
+.pub-controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 18px; }
+.pub-controls input, .pub-controls select {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+.pub-controls input { flex: 1 1 260px; }
+.pub-count { color: var(--muted); margin: 0; }
+
+.pub-list { list-style: none; padding: 0; margin: 0; }
+.pub-item { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid #f0f0f0; margin: 0; }
+.pub-num { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 26px; padding-top: 1px; }
+.pub-title { font-weight: 600; }
+.pub-authors { font-size: 0.95rem; }
+.pub-venue { font-size: 0.95rem; }
+.pub-venue em { color: var(--text); }
+.pub-type {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 1px 7px;
+  border-radius: 10px;
+  background: var(--accent-light);
+  color: var(--accent);
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.pub-links a { font-size: 0.9rem; margin-right: 8px; }
+.me { text-decoration: underline; }
+
+/* ---------- Placeholders (remove after filling) ---------- */
+.todo { background: #fff3b0; padding: 0 3px; border-radius: 2px; }
+
+/* ---------- Footer ---------- */
+footer { border-top: 1px solid var(--border); padding: 18px 0 28px; color: var(--muted); font-size: 0.9rem; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 640px) {
+  .profile { flex-direction: column; text-align: center; }
+  .profile-links { justify-content: center; }
+  .topbar .container { flex-direction: column; align-items: flex-start; }
+}
