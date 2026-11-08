@@ -61,7 +61,7 @@
 
       <article class="content">
         <h1 data-i18n-key="publications.title">Publications</h1>
-        <p class="subtitle">Complete list (16 records)</p>
+        <p class="subtitle">Complete list (59 records)</p>
 
         <div class="pub-tools" aria-label="Publication filters" data-i18n-key="publications.filtersAria" data-i18n-attr="aria-label">
           <label class="pub-tool">
@@ -69,6 +69,19 @@
             <input id="pub-search" type="search" placeholder="Title, author, journal" />
           </label>
           <label class="pub-tool">
+            <span data-i18n-en="Category" data-i18n-tr="Kategori">Category</span>
+            <select id="pub-cat-filter">
+              <option value="all" data-i18n-en="All Categories" data-i18n-tr="Tüm Kategoriler">All Categories</option>
+              <option value="scie" data-i18n-en="Articles in SCI-E Journals" data-i18n-tr="SCI-E Dergilerde Makaleler">Articles in SCI-E Journals</option>
+              <option value="intl" data-i18n-en="Articles in Other International Journals" data-i18n-tr="Diğer Uluslararası Dergilerde Makaleler">Articles in Other International Journals</option>
+              <option value="nat" data-i18n-en="Articles in National Journals" data-i18n-tr="Ulusal Dergilerde Makaleler">Articles in National Journals</option>
+              <option value="edited" data-i18n-en="Edited Books" data-i18n-tr="Editörlü Kitaplar">Edited Books</option>
+              <option value="chapter" data-i18n-en="Book Chapters" data-i18n-tr="Kitap Bölümleri">Book Chapters</option>
+              <option value="procintl" data-i18n-en="International Conference Papers" data-i18n-tr="Uluslararası Bildiriler">International Conference Papers</option>
+              <option value="procnat" data-i18n-en="National Conference Papers" data-i18n-tr="Ulusal Bildiriler">National Conference Papers</option>
+            </select>
+          </label>
+          <label class="pub-tool pub-tool-small">
             <span data-i18n-en="Year" data-i18n-tr="Yıl">Year</span>
             <select id="pub-year-filter">
               <option value="all" data-i18n-en="All Years" data-i18n-tr="Tüm Yıllar">All Years</option>
@@ -77,88 +90,277 @@
           <p id="pub-count" class="pub-count" aria-live="polite"></p>
         </div>
 
-        <ol class="pub-list">
-          <li data-year="2026" data-search="effects of drip irrigation regime, rootstock, and cultivar on yield and bioactive composition of pear (pyrus communis l.) under semi-arid conditions kırca, l., kırca, s., aygün, a. bmc plant biology 2026">
-            <strong>Effects of drip irrigation regime, rootstock, and cultivar on yield and bioactive composition of pear (<i>Pyrus communis</i> L.) under semi-arid conditions.</strong>
-            Kırca, L., Kırca, S., Aygün, A.
-            <em>BMC Plant Biology</em>, 2026. <a href="https://doi.org/10.1186/s12870-026-09719-9" target="_blank" rel="noreferrer">[DOI]</a>
+        <section class="pub-section" data-cat="scie">
+          <h2 data-i18n-en="Articles in SCI-E Journals" data-i18n-tr="SCI-E Dergilerde Makaleler">Articles in SCI-E Journals</h2>
+          <ol class="pub-list">
+          <li data-year="2026" data-search="pomological and biochemical characterization of local walnut (juglans regia l.) genotypes from kırşehir for breeding and functional food applications ahmet aygün,emre turan,atilla şimşek,firdevs elif şener saka,levent kırca pakistan journal of agricultural sciences 2026">
+            Aygün, A., Turan, E., Şimşek, A., Şener Saka, F.E., <span class="me">Kırca, L.</span> (2026). <strong>Pomological and Biochemical Characterization of Local Walnut (<i>Juglans regia</i> L.) Genotypes from Kırşehir for Breeding and Functional Food Applications.</strong>
+            <em>Pakistan Journal of Agricultural Sciences</em>, 63(2), 525–537. <a href="https://doi.org/10.21162/PAKJAS/26.475" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2026" data-search="nutritional composition, bioactive profile, and 5-lox targeted functional potential of naturally grown jujube genotypes mertoğlu, k., kırca, l., oncuoglu, s. plant biosystems 2026">
-            <strong>Nutritional composition, bioactive profile, and 5-LOX targeted functional potential of naturally grown jujube genotypes.</strong>
-            Mertoğlu, K., Kırca, L., Oncuoglu, S.
-            <em>Plant Biosystems</em>, 160(4), 193, 2026. <a href="https://doi.org/10.1007/s44473-026-00206-5" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2026" data-search="exploring the horticultural and functional diversity of naturally grown sour cherry genotypes coupled with molecular docking and dft analysis kerem mertoğlu,fatma nur şenlik,irem yazıcı,melekber sülüşoğlu durul,levent kırca,ibrahim bulduk,erten akbel phyton-ınternational journal of experimental botany 2026">
+            Mertoğlu, K., Şenlik, F.N., Yazıcı, İ., Sülüşoğlu Durul, M., <span class="me">Kırca, L.</span>, Bulduk, İ., Akbel, E. (2026). <strong>Exploring the Horticultural and Functional Diversity of Naturally Grown Sour Cherry Genotypes Coupled with Molecular Docking and DFT Analysis.</strong>
+            <em>Phyton-International Journal of Experimental Botany</em>. <a href="https://doi.org/10.32604/phyton.2026.081637" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2026" data-search="pomological and biochemical characterization of local walnut (juglans regia l.) genotypes from kırşehir for breeding and functional food applications aygün, a., turan, e., şimşek, a., saka, f.e.ş., kırca, l. pakistan journal of agricultural sciences 2026">
-            <strong>Pomological and biochemical characterization of local walnut (<i>Juglans regia</i> L.) genotypes from Kırşehir for breeding and functional food applications.</strong>
-            Aygün, A., Turan, E., Şimşek, A., Saka, F.E.Ş., Kırca, L.
-            <em>Pakistan Journal of Agricultural Sciences</em>, 63(2), 525–537, 2026. <a href="https://doi.org/10.21162/pakjas/26.475" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2026" data-search="effects of drip irrigation regime, rootstock, and cultivar on yield and bioactive composition of pear (pyrus communis l.) under semi-arid conditions levent kırca,semanur kırca,ahmet aygün bmc plant biology 2026">
+            <span class="me">Kırca, L.</span>, Kırca, S., Aygün, A. (2026). <strong>Effects of drip irrigation regime, rootstock, and cultivar on yield and bioactive composition of pear (<i>Pyrus communis</i> L.) under semi-arid conditions.</strong>
+            <em>BMC Plant Biology</em>. <a href="https://doi.org/10.1186/s12870-026-09719-9" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2026" data-search="pre-selected walnut (juglans regia l.) genotypes from the arslanbob forest: pomological characterization and identification of promising types aygün, a., amadalieva, m., kırca, l. mitteilungen klosterneuburg 2026">
-            <strong>Pre-selected walnut (<i>Juglans regia</i> L.) genotypes from the Arslanbob forest: Pomological characterization and identification of promising types.</strong>
-            Aygün, A., Amadalieva, M., Kırca, L.
-            <em>Mitteilungen Klosterneuburg</em>, 76(1), 30–45, 2026. <a href="https://doi.org/10.2478/mittklbg-2026-0003" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2026" data-search="pre-selected walnut (juglans regia l.) genotypes from the arslanbob forest: pomological characterization and identification of promising types ahmet aygün,meerim amadalieva,levent kırca mitteilungen klosterneuburg 2026">
+            Aygün, A., Amadalieva, M., <span class="me">Kırca, L.</span> (2026). <strong>Pre-selected walnut (<i>Juglans regia</i> L.) genotypes from the Arslanbob forest: Pomological characterization and identification of promising types.</strong>
+            <em>Mitteilungen Klosterneuburg</em>, 76(1), 30–45. <a href="https://doi.org/10.2478/mittklbg-2026-0003" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2025" data-search="phenotypic diversity and biochemical properties of pyrus elaeagnifolia pall. genotypes: a comprehensive study from western türkiye kırca, l., aygün, a. horticulturae 2025">
-            <strong>Phenotypic diversity and biochemical properties of <i>Pyrus elaeagnifolia</i> Pall. genotypes: A comprehensive study from Western Türkiye.</strong>
-            Kırca, L., Aygün, A.
-            <em>Horticulturae</em>, 11(8), 934, 2025. <a href="https://doi.org/10.3390/horticulturae11080934" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2026" data-search="nutritional composition, bioactive profile, and 5-lox targeted functional potential of naturally grown jujube genotypes kerem mertoğlu,levent kırca,serkan öncüoğlu plant biosystems 2026">
+            Mertoğlu, K., <span class="me">Kırca, L.</span>, Öncüoğlu, S. (2026). <strong>Nutritional composition, bioactive profile, and 5-LOX targeted functional potential of naturally grown jujube genotypes.</strong>
+            <em>Plant Biosystems</em>, 160(4), 193. <a href="https://doi.org/10.1007/s44473-026-00206-5" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2025" data-search="bioactive compounds and fatty acids in hazelnuts (corylus avellana l.) changes with increasing root age kırca, l. trees 2025">
-            <strong>Bioactive compounds and fatty acids in hazelnuts (<i>Corylus avellana</i> L.) changes with increasing root age.</strong>
-            Kırca, L.
-            <em>Trees</em>, 39(1), 12, 2025. <a href="https://doi.org/10.1007/s00468-024-02583-w" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2025" data-search="bioactive compounds and fatty acids in hazelnuts (corylus avellana l.) changes with increasing root age levent kırca trees 2025">
+            <span class="me">Kırca, L.</span> (2025). <strong>Bioactive compounds and fatty acids in hazelnuts (<i>Corylus avellana</i> L.) changes with increasing root age.</strong>
+            <em>Trees</em>, 39(1), 12. <a href="https://doi.org/10.1007/s00468-024-02583-w" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2025" data-search="title to be added kırca, l. meyve bilimi 2025">
-            <strong><span class="todo">Title to be added</span>.</strong>
-            Kırca, L.
-            <em>Meyve Bilimi</em>, 12(1), 65–77, 2025. <a href="https://doi.org/10.51532/meyve.1671443" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2025" data-search="phenotypic diversity and biochemical properties of pyrus elaeagnifolia pall. genotypes: a comprehensive study from western türkiye levent kırca,ahmet aygün horticulturae 2025">
+            <span class="me">Kırca, L.</span>, Aygün, A. (2025). <strong>Phenotypic Diversity and Biochemical Properties of <i>Pyrus elaeagnifolia</i> Pall. Genotypes: A Comprehensive Study from Western Türkiye.</strong>
+            <em>Horticulturae</em>, 11(8), 934. <a href="https://doi.org/10.3390/horticulturae11080934" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2025" data-search="title to be added kırca, l., mertoğlu, k. manas journal of agriculture veterinary and life sciences 2025">
-            <strong><span class="todo">Title to be added</span>.</strong>
-            Kırca, L., Mertoğlu, K.
-            <em>Manas Journal of Agriculture Veterinary and Life Sciences</em>, 2025. <a href="https://doi.org/10.53518/mjavl.1574982" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2024" data-search="histological ınvestigation of the compatibility of prunus spinosa as ınterstock with almond cultivars levent kırca,turan karadeniz applied fruit science 2024">
+            <span class="me">Kırca, L.</span>, Karadeniz, T. (2024). <strong>Histological Investigation of the Compatibility of <i>Prunus spinosa</i> as Interstock with Almond Cultivars.</strong>
+            <em>Applied Fruit Science</em>, 66(4), 1305–1316. <a href="https://doi.org/10.1007/s10341-024-01123-7" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2025" data-search="title to be added kırca, l. international journal of agriculture, environment and food sciences 2025">
-            <strong><span class="todo">Title to be added</span>.</strong>
-            Kırca, L.
-            <em>International Journal of Agriculture, Environment and Food Sciences</em>, 2025. <a href="https://doi.org/10.31015/2025.1.15" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2024" data-search="determination and comparison of morpho-physiological characteristics of turkish sweet cherry (prunus avium l.) grown in afyonkarahisar: local cultivars and genotypes levent kırca,ahmet aygün genetic resources and crop evolution 2024">
+            <span class="me">Kırca, L.</span>, Aygün, A. (2024). <strong>Determination and comparison of morpho-physiological characteristics of Turkish sweet cherry (<i>Prunus avium</i> L.) grown in Afyonkarahisar: local cultivars and genotypes.</strong>
+            <em>Genetic Resources and Crop Evolution</em>, 71(8), 4359–4373. <a href="https://doi.org/10.1007/s10722-024-01904-9" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2024" data-search="determination and comparison of morpho-physiological characteristics of turkish sweet cherry (prunus avium l.) grown in afyonkarahisar: local cultivars and genotypes kırca, l., aygün, a. genetic resources and crop evolution 2024">
-            <strong>Determination and comparison of morpho-physiological characteristics of Turkish sweet cherry (<i>Prunus avium</i> L.) grown in Afyonkarahisar: local cultivars and genotypes.</strong>
-            Kırca, L., Aygün, A.
-            <em>Genetic Resources and Crop Evolution</em>, 71(8), 4359–4373, 2024. <a href="https://doi.org/10.1007/s10722-024-01904-9" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2023" data-search="organic acid, phenolic compound and antioxidant contents of fresh and dried fruits of pear (pyrus communis l.) cultivars levent kırca,semanur kırca,ahmet aygün erwerbs-obstbau 2023">
+            <span class="me">Kırca, L.</span>, Kırca, S., Aygün, A. (2023). <strong>Organic Acid, Phenolic Compound and Antioxidant Contents of Fresh and Dried Fruits of Pear (<i>Pyrus communis</i> L.) Cultivars.</strong>
+            <em>Erwerbs-Obstbau</em>, 65(4), 677–691. <a href="https://doi.org/10.1007/s10341-022-00760-0" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">SCI-E</span>
           </li>
-          <li data-year="2024" data-search="histological investigation of the compatibility of prunus spinosa as interstock with almond cultivars kırca, l., karadeniz, t. applied fruit science 2024">
-            <strong>Histological investigation of the compatibility of <i>Prunus spinosa</i> as interstock with almond cultivars.</strong>
-            Kırca, L., Karadeniz, T.
-            <em>Applied Fruit Science</em>, 66(4), 1305–1316, 2024. <a href="https://doi.org/10.1007/s10341-024-01123-7" target="_blank" rel="noreferrer">[DOI]</a>
+          </ol>
+        </section>
+        <section class="pub-section" data-cat="intl">
+          <h2 data-i18n-en="Articles in Other International Journals" data-i18n-tr="Diğer Uluslararası Dergilerde Makaleler">Articles in Other International Journals</h2>
+          <ol class="pub-list">
+          <li data-year="2026" data-search="selection of superior vine clones from the ‘çalkarası’ grape population grown in çal district (denizli, türkiye) turan karadeniz,levent kırca,hayri sağlam ınternational journal of secondary metabolite 2026">
+            Karadeniz, T., <span class="me">Kırca, L.</span>, Sağlam, H. (2026). <strong>Selection of superior vine clones from the ‘Çalkarası’ grape population grown in Çal district (Denizli, Türkiye).</strong>
+            <em>International Journal of Secondary Metabolite</em>. <span class="pub-tag">Scopus</span>
           </li>
-          <li data-year="2024" data-search="regional analysis of almond production: current situation and future potential in the aegean region kırca, l. ordu university journal of science and technology 2024">
-            <strong>Regional analysis of almond production: Current situation and future potential in the Aegean Region.</strong>
-            Kırca, L.
-            <em>Ordu University Journal of Science and Technology</em>, 2024. <a href="https://doi.org/10.54370/ordubtd.1499044" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2025" data-search="determination of phenolic content of berberis vulgaris l. fruits harvested at different times by multivariate analysis tuba bak,levent kırca,berna doğru çokran,turan karadeniz ınternational journal of secondary metabolite 2025">
+            Bak, T., <span class="me">Kırca, L.</span>, Doğru Çokran, B., Karadeniz, T. (2025). <strong>Determination of phenolic content of <i>Berberis vulgaris</i> L. fruits harvested at different times by multivariate analysis.</strong>
+            <em>International Journal of Secondary Metabolite</em>. <a href="https://doi.org/10.21448/ijsm.1580988" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">Scopus</span>
           </li>
-          <li data-year="2023" data-search="organic acid, phenolic compound and antioxidant contents of fresh and dried fruits of pear (pyrus communis l.) cultivars kırca, l., kırca, s., aygün, a. erwerbs-obstbau 2023">
-            <strong>Organic acid, phenolic compound and antioxidant contents of fresh and dried fruits of pear (<i>Pyrus communis</i> L.) cultivars.</strong>
-            Kırca, L., Kırca, S., Aygün, A.
-            <em>Erwerbs-Obstbau</em>, 65(4), 677–691, 2023. <a href="https://doi.org/10.1007/s10341-022-00760-0" target="_blank" rel="noreferrer">[DOI]</a>
+          <li data-year="2020" data-search="bademden çöğür elde edilmesi üzerine bir araştırma turan karadeniz,levent kırca,gülşah doğan,muharrem arslan bahçe 2020">
+            Karadeniz, T., <span class="me">Kırca, L.</span>, Doğan, G., Arslan, M. (2020). <strong>Bademden Çöğür Elde Edilmesi Üzerine Bir Araştırma.</strong>
+            <em>Bahçe</em>. <span class="pub-tag">TR Dizin</span>
           </li>
-          <li data-year="2020" data-search="determination and evaluation of wild hazelnut genotypes in tirebolu harkköy region karadeniz, t., kırca, l., şenyurt, m., bak, t. uluslararası anadolu ziraat mühendisliği bilimleri dergisi 2020">
-            <strong>Determination and evaluation of wild hazelnut genotypes in Tirebolu Harkköy region.</strong>
-            Karadeniz, T., Kırca, L., Şenyurt, M., Bak, T.
-            <em>Uluslararası Anadolu Ziraat Mühendisliği Bilimleri Dergisi</em>, 2020.
+          <li data-year="2019" data-search="relationships between ages of planting with the important fruit characteristics in hazelnut turan karadeniz,levent kırca global advanced research journal of agricultural science 2019">
+            Karadeniz, T., <span class="me">Kırca, L.</span> (2019). <strong>Relationships between ages of planting with the important fruit characteristics in hazelnut.</strong>
+            <em>Global Advanced Research Journal of Agricultural Science</em>. 
           </li>
-          <li data-year="2018" data-search="hazelnut usage areas and their effects on human health kırca, l., bak, t., kırca, s., karadeniz, t. bahçe 2018">
-            <strong>Hazelnut usage areas and their effects on human health.</strong>
-            Kırca, L., Bak, T., Kırca, S., Karadeniz, T.
-            <em>Bahçe</em>, 2018.
+          </ol>
+        </section>
+        <section class="pub-section" data-cat="nat">
+          <h2 data-i18n-en="Articles in National Journals" data-i18n-tr="Ulusal Dergilerde Makaleler">Articles in National Journals</h2>
+          <ol class="pub-list">
+          <li data-year="2025" data-search="0900 ziraat ve starks gold kiraz çeşitlerinde mineral madde kompozisyonunun yıllara ve farklı bitki kısımlarına göre değişimi levent kırca,kerem mertoğlu manas journal of agriculture veterinary and life sciences 2025">
+            <span class="me">Kırca, L.</span>, Mertoğlu, K. (2025). <strong>0900 Ziraat ve Starks Gold Kiraz Çeşitlerinde Mineral Madde Kompozisyonunun Yıllara ve Farklı Bitki Kısımlarına Göre Değişimi.</strong>
+            <em>Manas Journal of Agriculture Veterinary and Life Sciences</em>. <a href="https://doi.org/10.53518/mjavl.1574982" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">TR Dizin</span>
           </li>
-          <li data-year="2014" data-search="study on the selection of walnut (juglans regia l.) in trabzon kırca, s., yarılgaç, t., kırca, l., bak, t. turkish journal of agricultural and natural sciences 2014">
-            <strong>Study on the selection of walnut (<i>Juglans regia</i> L.) in Trabzon.</strong>
-            Kırca, S., Yarılgaç, T., Kırca, L., Bak, T.
-            <em>Turkish Journal of Agricultural and Natural Sciences</em>, 2014.
+          <li data-year="2025" data-search="effect of auxin applications on rooting and shoot success of bardacık, bursa black and sarılop fig cuttings berna doğru çokran,tuba bak,turan karadeniz,levent kırca turkish journal of agriculture - food science and technology 2025">
+            Doğru Çokran, B., Bak, T., Karadeniz, T., <span class="me">Kırca, L.</span> (2025). <strong>Effect of Auxin Applications on Rooting and Shoot Success of Bardacık, Bursa Black and Sarılop Fig Cuttings.</strong>
+            <em>Turkish Journal of Agriculture - Food Science and Technology</em>. <a href="https://doi.org/10.24925/turjaf.v13i8.2097-2102.7675" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">TR Dizin</span>
           </li>
-        </ol>
+          <li data-year="2025" data-search="determination of morphological and pomological characters of denizli (tavas) almond (prunus amygdalus l.) genotypes levent kırca turkish journal of agriculture - food science and technology 2025">
+            <span class="me">Kırca, L.</span> (2025). <strong>Determination of Morphological and Pomological Characters of Denizli (Tavas) Almond (<i>Prunus amygdalus</i> L.) Genotypes.</strong>
+            <em>Turkish Journal of Agriculture - Food Science and Technology</em>. <a href="https://doi.org/10.24925/turjaf.v13i4.978-984.7405" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">TR Dizin</span>
+          </li>
+          <li data-year="2025" data-search="morphological and chemical characteristics of prunus spinosa l. genotypes from denizli (çivril) levent kırca,kerem mertoğlu turkish journal of agricultural and natural sciences 2025">
+            <span class="me">Kırca, L.</span>, Mertoğlu, K. (2025). <strong>Morphological and Chemical Characteristics of <i>Prunus spinosa</i> L. Genotypes from Denizli (Çivril).</strong>
+            <em>Turkish Journal of Agricultural and Natural Sciences</em>, 12(2), 379–389. <a href="https://doi.org/10.30910/turkjans.1608381" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">TR Dizin</span>
+          </li>
+          <li data-year="2025" data-search="nutrient dynamics in apple: analyzing macro and micronutrient distribution in leaves and fruits kerem mertoğlu,levent kırca ınternational journal of agriculture environment and food sciences 2025">
+            Mertoğlu, K., <span class="me">Kırca, L.</span> (2025). <strong>Nutrient dynamics in apple: Analyzing macro and micronutrient distribution in leaves and fruits.</strong>
+            <em>International Journal of Agriculture Environment and Food Sciences</em>. <a href="https://doi.org/10.31015/2025.1.15" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">TR Dizin</span>
+          </li>
+          <li data-year="2025" data-search="determination of morphological and biochemical properties of almond (prunus amygdalus) genotypes in denizli-çivril levent kırca meyve bilimi 2025">
+            <span class="me">Kırca, L.</span> (2025). <strong>Determination of Morphological and Biochemical Properties of Almond (<i>Prunus amygdalus</i>) Genotypes in Denizli-Çivril.</strong>
+            <em>Meyve Bilimi</em>, 12(1), 65–77. <a href="https://doi.org/10.51532/meyve.1671443" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">TR Dizin</span>
+          </li>
+          <li data-year="2025" data-search="evaluation of phenological and pomological characteristics of walnut cultivars in the ecology of tavas (denizli) levent kırca ıspec journal of agricultural sciences 2025">
+            <span class="me">Kırca, L.</span> (2025). <strong>Evaluation of Phenological and Pomological Characteristics of Walnut Cultivars in the Ecology of Tavas (Denizli).</strong>
+            <em>ISPEC Journal of Agricultural Sciences</em>. <a href="https://doi.org/10.5281/zenodo.14590649" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">TR Dizin</span>
+          </li>
+          <li data-year="2025" data-search="comparative analysis of total phenolic, antioxidant activity and nutrient element composition of fruits and fruit stalks of crataegus spp. grown in denizli (türkiye) levent kırca,tuba bak akademik ziraat dergisi 2025">
+            <span class="me">Kırca, L.</span>, Bak, T. (2025). <strong>Comparative Analysis of Total Phenolic, Antioxidant Activity and Nutrient Element Composition of Fruits and Fruit Stalks of <i>Crataegus</i> spp. grown in Denizli (Türkiye).</strong>
+            <em>Akademik Ziraat Dergisi</em>. <a href="https://doi.org/10.29278/azd.1700696" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">TR Dizin</span>
+          </li>
+          <li data-year="2024" data-search="badem üretiminin bölgesel analizi: ege bölgesi’nde mevcut durum ve gelecek potansiyeli levent kırca ordu üniversitesi bilim ve teknoloji dergisi 2024">
+            <span class="me">Kırca, L.</span> (2024). <strong>Badem Üretiminin Bölgesel Analizi: Ege Bölgesi’nde Mevcut Durum ve Gelecek Potansiyeli.</strong>
+            <em>Ordu Üniversitesi Bilim ve Teknoloji Dergisi</em>. <a href="https://doi.org/10.54370/ordubtd.1499044" target="_blank" rel="noreferrer">[DOI]</a> <span class="pub-tag">TR Dizin</span> <span class="pub-tag" data-i18n-en="Review" data-i18n-tr="Derleme">Review</span>
+          </li>
+          <li data-year="2020" data-search="tirebolu harkköy yöresinde yabani fındık genotiplerinin tespiti ve değerlendirilmesi turan karadeniz,levent kırca,mehtap şenyurt,tuba bak uluslararası anadolu ziraat mühendisliği bilimleri dergisi 2020">
+            Karadeniz, T., <span class="me">Kırca, L.</span>, Şenyurt, M., Bak, T. (2020). <strong>Tirebolu Harkköy Yöresinde Yabani Fındık Genotiplerinin Tespiti ve Değerlendirilmesi.</strong>
+            <em>Uluslararası Anadolu Ziraat Mühendisliği Bilimleri Dergisi</em>, 2(1), 13–23. 
+          </li>
+          <li data-year="2018" data-search="fındıkta emanet sistemi tuba bak,turan karadeniz,mehtap şenyurt,levent kırca bahçe 2018">
+            Bak, T., Karadeniz, T., Şenyurt, M., <span class="me">Kırca, L.</span> (2018). <strong>Fındıkta Emanet Sistemi.</strong>
+            <em>Bahçe</em>. <span class="pub-tag">TR Dizin</span>
+          </li>
+          <li data-year="2018" data-search="ahlat (pyrus elaeagrifolia pall.) tohumlarının çimlenmesi üzerine potasyumnitrat (kno3) uygulamalarının etkisi levent kırca,ahmet aygün bahçe 2018">
+            <span class="me">Kırca, L.</span>, Aygün, A. (2018). <strong>Ahlat (<i>Pyrus elaeagrifolia</i> Pall.) Tohumlarının Çimlenmesi Üzerine Potasyumnitrat (KNO3) Uygulamalarının Etkisi.</strong>
+            <em>Bahçe</em>. <span class="pub-tag">TR Dizin</span>
+          </li>
+          <li data-year="2018" data-search="fındığın kullanım alanları ve insan sağlığına etkileri levent kırca,tuba bak,semanur kırca,turan karadeniz bahçe 2018">
+            <span class="me">Kırca, L.</span>, Bak, T., Kırca, S., Karadeniz, T. (2018). <strong>Fındığın Kullanım Alanları ve İnsan Sağlığına Etkileri.</strong>
+            <em>Bahçe</em>. <span class="pub-tag">TR Dizin</span> <span class="pub-tag" data-i18n-en="Review" data-i18n-tr="Derleme">Review</span>
+          </li>
+          <li data-year="2014" data-search="study on the selection of walnut (juglans regia l.) ın trabzon semanur kırca,tarık yarılgaç,levent kırca,tuba bak turkish journal of agricultural and natural sciences 2014">
+            Kırca, S., Yarılgaç, T., <span class="me">Kırca, L.</span>, Bak, T. (2014). <strong>Study on The Selection of Walnut (<i>Juglans regia</i> L.) In Trabzon.</strong>
+            <em>Turkish Journal of Agricultural and Natural Sciences</em>. 
+          </li>
+          <li data-year="2014" data-search="formation of çotanak groups according to direction of branches ın the ocaks tombul and palaz ın hazelnut varieties tuba bak,turan karadeniz,mehtap şenyurt,levent kırca,semanur kırca turkish journal of agricultural and natural sciences 2014">
+            Bak, T., Karadeniz, T., Şenyurt, M., <span class="me">Kırca, L.</span>, Kırca, S. (2014). <strong>Formation Of Çotanak Groups According To Direction Of Branches In The Ocaks Tombul And Palaz In Hazelnut Varieties.</strong>
+            <em>Turkish Journal of Agricultural and Natural Sciences</em>. 
+          </li>
+          </ol>
+        </section>
+        <section class="pub-section" data-cat="edited">
+          <h2 data-i18n-en="Edited Books" data-i18n-tr="Editörlü Kitaplar">Edited Books</h2>
+          <ol class="pub-list">
+          <li data-year="2024" data-search="multidimensional approaches in fruit research turan karadeniz,levent kırca yaz yayınları 2024">
+            Karadeniz, T., <span class="me">Kırca, L.</span> (<span class="pub-plain" data-i18n-en="Eds." data-i18n-tr="Ed.">Eds.</span>) (2024). <strong>Multidimensional Approaches in Fruit Research.</strong>
+            Yaz Yayınları. ISBN: 978-625-5547-34-7.
+          </li>
+          </ol>
+        </section>
+        <section class="pub-section" data-cat="chapter">
+          <h2 data-i18n-en="Book Chapters" data-i18n-tr="Kitap Bölümleri">Book Chapters</h2>
+          <ol class="pub-list">
+          <li data-year="2024" data-search="use of rootstock in almond cultivation levent kırca agriculture, forestry and aquaculture sciences koray özrenk,ali bolat 2024">
+            <span class="me">Kırca, L.</span> (2024). <strong>Use of Rootstock in Almond Cultivation.</strong>
+            <span class="pub-plain" data-i18n-en="In:" data-i18n-tr="İçinde:">In:</span> Özrenk, K., Bolat, A. (<span class="pub-plain" data-i18n-en="Eds." data-i18n-tr="Ed.">Eds.</span>), <em>Agriculture, Forestry and Aquaculture Sciences</em> (<span class="pub-plain" data-i18n-en="pp." data-i18n-tr="ss.">pp.</span> 235–248). Serüven Publishing. ISBN: 978-625-5955-68-5.
+          </li>
+          <li data-year="2024" data-search="morphological characterization of rosehip (rosa canina l.) genotypes in baklan district of denizli province levent kırca,hayrunisa karateke,erkan bilgiç multidimensional approaches in fruit research turan karadeniz,levent kırca 2024">
+            <span class="me">Kırca, L.</span>, Karateke, H., Bilgiç, E. (2024). <strong>Morphological Characterization of Rosehip (<i>Rosa canina</i> L.) Genotypes in Baklan District of Denizli Province.</strong>
+            <span class="pub-plain" data-i18n-en="In:" data-i18n-tr="İçinde:">In:</span> Karadeniz, T., Kırca, L. (<span class="pub-plain" data-i18n-en="Eds." data-i18n-tr="Ed.">Eds.</span>), <em>Multidimensional Approaches in Fruit Research</em> (<span class="pub-plain" data-i18n-en="pp." data-i18n-tr="ss.">pp.</span> 25–42). Yaz Yayınları. ISBN: 978-625-5547-34-7.
+          </li>
+          <li data-year="2023" data-search="doğal yiyecekler: sert kabuklu meyveler levent kırca gastronomik akımlar ıı sinem türk aslan 2023">
+            <span class="me">Kırca, L.</span> (2023). <strong>Doğal Yiyecekler: Sert Kabuklu Meyveler.</strong>
+            <span class="pub-plain" data-i18n-en="In:" data-i18n-tr="İçinde:">In:</span> Türk Aslan, S. (<span class="pub-plain" data-i18n-en="Eds." data-i18n-tr="Ed.">Eds.</span>), <em>Gastronomik Akımlar II</em> (<span class="pub-plain" data-i18n-en="pp." data-i18n-tr="ss.">pp.</span> 185–213). IKSAD Publications. ISBN: 978-625-367-361-1.
+          </li>
+          <li data-year="2023" data-search="ahlat (pyrus elaeagnifolia) ahmet aygün,levent kırca minör meyveler ıı melekber sülüşoğlu durul,mehmet polat 2023">
+            Aygün, A., <span class="me">Kırca, L.</span> (2023). <strong>Ahlat (<i>Pyrus elaeagnifolia</i>).</strong>
+            <span class="pub-plain" data-i18n-en="In:" data-i18n-tr="İçinde:">In:</span> Sülüşoğlu Durul, M., Polat, M. (<span class="pub-plain" data-i18n-en="Eds." data-i18n-tr="Ed.">Eds.</span>), <em>Minör Meyveler II</em> (<span class="pub-plain" data-i18n-en="pp." data-i18n-tr="ss.">pp.</span> 61–91). IKSAD Publications. ISBN: 978-625-367-601-8.
+          </li>
+          <li data-year="2022" data-search="the situation of nuts cultivation in türkiye levent kırca,tuba bak sections from life and agriculture arzu çığ 2022">
+            <span class="me">Kırca, L.</span>, Bak, T. (2022). <strong>The Situation of Nuts Cultivation in Türkiye.</strong>
+            <span class="pub-plain" data-i18n-en="In:" data-i18n-tr="İçinde:">In:</span> Çığ, A. (<span class="pub-plain" data-i18n-en="Eds." data-i18n-tr="Ed.">Eds.</span>), <em>Sections From Life and Agriculture</em> (<span class="pub-plain" data-i18n-en="pp." data-i18n-tr="ss.">pp.</span> 51–72). IKSAD Publications. ISBN: 978-625-6955-53-0.
+          </li>
+          <li data-year="2022" data-search="chemical composition of almond fruit levent kırca,turan karadeniz fruits for human use in various aspects emrah güler 2022">
+            <span class="me">Kırca, L.</span>, Karadeniz, T. (2022). <strong>Chemical Composition of Almond Fruit.</strong>
+            <span class="pub-plain" data-i18n-en="In:" data-i18n-tr="İçinde:">In:</span> Güler, E. (<span class="pub-plain" data-i18n-en="Eds." data-i18n-tr="Ed.">Eds.</span>), <em>Fruits for Human Use in Various Aspects</em> (<span class="pub-plain" data-i18n-en="pp." data-i18n-tr="ss.">pp.</span> 3–36). IKSAD Publications. ISBN: 978-625-8213-69-0.
+          </li>
+          <li data-year="2022" data-search="new technologies used in food labeling levent kırca fruits for human use in various aspects emrah güler 2022">
+            <span class="me">Kırca, L.</span> (2022). <strong>New Technologies Used in Food Labeling.</strong>
+            <span class="pub-plain" data-i18n-en="In:" data-i18n-tr="İçinde:">In:</span> Güler, E. (<span class="pub-plain" data-i18n-en="Eds." data-i18n-tr="Ed.">Eds.</span>), <em>Fruits for Human Use in Various Aspects</em> (<span class="pub-plain" data-i18n-en="pp." data-i18n-tr="ss.">pp.</span> 265–307). IKSAD Publications. ISBN: 978-625-8213-69-0.
+          </li>
+          </ol>
+        </section>
+        <section class="pub-section" data-cat="procintl">
+          <h2 data-i18n-en="International Conference Papers" data-i18n-tr="Uluslararası Bildiriler">International Conference Papers</h2>
+          <ol class="pub-list">
+          <li data-year="2025" data-search="morphological characteristics of apple genotypes in mudurnu (bolu) tuba bak,levent kırca ıv. ınternational congress of the turkish journal of agriculture - food science and technology 2025">
+            Bak, T., <span class="me">Kırca, L.</span> (2025). <strong>Morphological Characteristics of Apple Genotypes in Mudurnu (Bolu).</strong>
+            <em>IV. International Congress of the Turkish Journal of Agriculture - Food Science and Technology</em>, 28–30.04.2025. <span class="pub-tag" data-i18n-en="Full text" data-i18n-tr="Tam metin">Full text</span>
+          </li>
+          <li data-year="2025" data-search="gürağaç village, giresun (türkiye) determination of phenotypic diversity in wild pear genotypes by pomological and biochemical analyses semanur kırca,levent kırca 9th ınternational conference on horticulture &amp; expo 2025 2025">
+            Kırca, S., <span class="me">Kırca, L.</span> (2025). <strong>Gürağaç Village, Giresun (Türkiye) Determination of Phenotypic Diversity in Wild Pear Genotypes by Pomological and Biochemical Analyses.</strong>
+            <em>9th International Conference on Horticulture & Expo 2025</em>, 15–16.04.2025. <span class="pub-tag" data-i18n-en="Full text" data-i18n-tr="Tam metin">Full text</span>
+          </li>
+          <li data-year="2025" data-search="determination of pomological and biochemical properties of almond genetic resources in acıpayam (denizli) region levent kırca ınternational manas turkic world agriculture congress 2025">
+            <span class="me">Kırca, L.</span> (2025). <strong>Determination of pomological and biochemical properties of almond genetic resources in Acıpayam (Denizli) region.</strong>
+            <em>International Manas Turkic World Agriculture Congress</em>, 21–23.05.2025. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2025" data-search="the potential of traditional genetic resources in climate change adaptation of uzbekistan’s fruit production: a review levent kırca,turan karadeniz 8th ınternational agricultural congress 2025">
+            <span class="me">Kırca, L.</span>, Karadeniz, T. (2025). <strong>The Potential of Traditional Genetic Resources in Climate Change Adaptation of Uzbekistan’s Fruit Production: A Review.</strong>
+            <em>8th International Agricultural Congress</em>, 18–22.09.2025. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2024" data-search="bazı önemli minör meyvelerin nahçıvan özelinde yetiştiriciliği ve önemi tuba bak,levent kırca 7th ınternational agriculture congress 2024">
+            Bak, T., <span class="me">Kırca, L.</span> (2024). <strong>Bazı Önemli Minör Meyvelerin Nahçıvan Özelinde Yetiştiriciliği ve Önemi.</strong>
+            <em>7th International Agriculture Congress</em>, 26–30.09.2024. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2024" data-search="kuzeyin süper meyvesi: karayemiş levent kırca,tuba bak,turan karadeniz 7th ınternational agriculture congress 2024">
+            <span class="me">Kırca, L.</span>, Bak, T., Karadeniz, T. (2024). <strong>Kuzeyin Süper Meyvesi: Karayemiş.</strong>
+            <em>7th International Agriculture Congress</em>, 26–30.09.2024. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2022" data-search="farklı iki incir genotipinde fenolik madde içerikleri turan karadeniz,tuba bak,berna doğru çokran,levent kırca,emrah güler,tatjana kokaj 5th ınternational agricultural congress 2022">
+            Karadeniz, T., Bak, T., Doğru Çokran, B., <span class="me">Kırca, L.</span>, Güler, E., , T.K. (2022). <strong>Farklı İki İncir Genotipinde Fenolik Madde İçerikleri.</strong>
+            <em>5th International Agricultural Congress</em>, 05.12.2022. <span class="pub-tag" data-i18n-en="Full text" data-i18n-tr="Tam metin">Full text</span>
+          </li>
+          <li data-year="2021" data-search="the effect of olive oil application on fruit ripening in siyah cv. figs turan karadeniz,tuba bak,levent kırca ınternational scientific symposium “sectorul agroalimentar – realizări și perspective” 2021">
+            Karadeniz, T., Bak, T., <span class="me">Kırca, L.</span> (2021). <strong>The Effect of Olive Oil Application on Fruit Ripening in Siyah cv. Figs.</strong>
+            <em>International Scientific Symposium “Sectorul Agroalimentar – Realizări și Perspective”</em>, 19–20.11.2021. <span class="pub-tag" data-i18n-en="Full text" data-i18n-tr="Tam metin">Full text</span>
+          </li>
+          <li data-year="2020" data-search="patlıcan incirinde meyve gelişimi üzerine bazı uygulamaların etkileri tuba bak,levent kırca,emrah güler,turan karadeniz 3rd ınternational agriculture congress 2020">
+            Bak, T., <span class="me">Kırca, L.</span>, Güler, E., Karadeniz, T. (2020). <strong>Patlıcan İncirinde Meyve Gelişimi Üzerine Bazı Uygulamaların Etkileri.</strong>
+            <em>3rd International Agriculture Congress</em>, 05–09.03.2020. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2020" data-search="bazı hünnap çeşitlerinde agromorfolojik özelliklerin belirlenmesi levent kırca,semanur kırca,tuba bak,turan karadeniz 3rd ınternational agriculture congress 2020">
+            <span class="me">Kırca, L.</span>, Kırca, S., Bak, T., Karadeniz, T. (2020). <strong>Bazı Hünnap Çeşitlerinde Agromorfolojik Özelliklerin Belirlenmesi.</strong>
+            <em>3rd International Agriculture Congress</em>, 05–09.03.2020. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2019" data-search="türk fındık çeşitlerine anaç (corylus colurna l.) seçimi turan karadeniz,tuba bak,emrah güler,levent kırca,faik ekmel tekintaş 2nd ınternational agriculture congress 2019">
+            Karadeniz, T., Bak, T., Güler, E., <span class="me">Kırca, L.</span>, Tekintaş, F.E. (2019). <strong>Türk Fındık Çeşitlerine Anaç (<i>Corylus colurna</i> L.) Seçimi.</strong>
+            <em>2nd International Agriculture Congress</em>, 21–24.11.2019. <span class="pub-tag" data-i18n-en="Full text" data-i18n-tr="Tam metin">Full text</span>
+          </li>
+          <li data-year="2019" data-search="badem tohumlarından çöğür eldesi üzerine araştırmalar turan karadeniz,levent kırca,gülşah doğan,muharrem arslan 2nd ınternational agriculture congress 2019">
+            Karadeniz, T., <span class="me">Kırca, L.</span>, Doğan, G., Arslan, M. (2019). <strong>Badem Tohumlarından Çöğür Eldesi Üzerine Araştırmalar.</strong>
+            <em>2nd International Agriculture Congress</em>, 21–24.11.2019. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2019" data-search="fındıkta (c. avellana l.) ekonomik ömrün belirlenmesi levent kırca,turan karadeniz 2nd ınternational agriculture congress 2019">
+            <span class="me">Kırca, L.</span>, Karadeniz, T. (2019). <strong>Fındıkta (<i>C. avellana</i> L.) Ekonomik Ömrün Belirlenmesi.</strong>
+            <em>2nd International Agriculture Congress</em>, 21–24.11.2019. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2019" data-search="çerezlik fındık çeşit adayları “turanbey 14 ve turanbey 54” turan karadeniz,tuba bak,emrah güler,levent kırca,emre kan 2nd ınternational agriculture congress 2019">
+            Karadeniz, T., Bak, T., Güler, E., <span class="me">Kırca, L.</span>, Kan, E. (2019). <strong>Çerezlik Fındık Çeşit Adayları “Turanbey 14 ve Turanbey 54”.</strong>
+            <em>2nd International Agriculture Congress</em>, 21–24.11.2019. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2019" data-search="prunus spinosa’nın anaç olarak kullanılabilirliği üzerine araştırmalar hatice şahiner öylek,turan karadeniz,levent kırca,gülşah doğan 2nd ınternational agriculture congress 2019">
+            Şahiner Öylek, H., Karadeniz, T., <span class="me">Kırca, L.</span>, Doğan, G. (2019). <strong><i>Prunus spinosa</i>’nın Anaç Olarak Kullanılabilirliği Üzerine Araştırmalar.</strong>
+            <em>2nd International Agriculture Congress</em>, 21–24.11.2019. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2018" data-search="fındığın kullanım alanları ve insan sağlığına etkileri levent kırca,tuba bak,semanur kırca,turan karadeniz ınternational agricultural congress 2018">
+            <span class="me">Kırca, L.</span>, Bak, T., Kırca, S., Karadeniz, T. (2018). <strong>Fındığın Kullanım Alanları ve İnsan Sağlığına Etkileri.</strong>
+            <em>International Agricultural Congress</em>, 03.06.2018. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2018" data-search="ahlat (pyrus elaeagrifolia pall.) tohumlarının çimlenmesi üzerine potasyum nitrat (kno3) uygulamalarının etkisi levent kırca,ahmet aygün ınternational agricultural congress 2018">
+            <span class="me">Kırca, L.</span>, Aygün, A. (2018). <strong>Ahlat (<i>Pyrus elaeagrifolia</i> Pall.) Tohumlarının Çimlenmesi Üzerine Potasyum Nitrat (KNO3) Uygulamalarının Etkisi.</strong>
+            <em>International Agricultural Congress</em>, 03–06.06.2018. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2018" data-search="fındıkta emanet sistemi tuba bak,turan karadeniz,mehtap şenyurt,levent kırca ınternational agricultural congress 2018">
+            Bak, T., Karadeniz, T., Şenyurt, M., <span class="me">Kırca, L.</span> (2018). <strong>Fındıkta Emanet Sistemi.</strong>
+            <em>International Agricultural Congress</em>, 03–06.06.2018. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          </ol>
+        </section>
+        <section class="pub-section" data-cat="procnat">
+          <h2 data-i18n-en="National Conference Papers" data-i18n-tr="Ulusal Bildiriler">National Conference Papers</h2>
+          <ol class="pub-list">
+          <li data-year="2023" data-search="denizli ilinin badem üretim potansiyeline genel bir bakış turan karadeniz,levent kırca beyağaç 1. tarım sempozyumu 2023">
+            Karadeniz, T., <span class="me">Kırca, L.</span> (2023). <strong>Denizli İlinin Badem Üretim Potansiyeline Genel Bir Bakış.</strong>
+            <em>Beyağaç 1. Tarım Sempozyumu</em>, 10–12.08.2023. <span class="pub-tag" data-i18n-en="Full text" data-i18n-tr="Tam metin">Full text</span>
+          </li>
+          <li data-year="2023" data-search="kepir cevizinin meyve özellikleri turan karadeniz,tuba bak,berna doğru çokran,levent kırca 4. ulusal ceviz sempozyumu 2023">
+            Karadeniz, T., Bak, T., Doğru Çokran, B., <span class="me">Kırca, L.</span> (2023). <strong>Kepir Cevizinin Meyve Özellikleri.</strong>
+            <em>4. Ulusal Ceviz Sempozyumu</em>, 16–19.11.2023. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2023" data-search="yüksek sıcaklığa maruz kalmış cevizlerin kimyasal kompozisyonunun belirlenmesi turan karadeniz,tuba bak,berna doğru çokran,levent kırca,gurbet çelik turgut,yağmur ceylan ekiz 4. ulusal ceviz sempozyumu 2023">
+            Karadeniz, T., Bak, T., Doğru Çokran, B., <span class="me">Kırca, L.</span>, Çelik Turgut, G., Ceylan Ekiz, Y. (2023). <strong>Yüksek Sıcaklığa Maruz Kalmış Cevizlerin Kimyasal Kompozisyonunun Belirlenmesi.</strong>
+            <em>4. Ulusal Ceviz Sempozyumu</em>, 16.11.2023. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          <li data-year="2023" data-search="bilecik gölpazarı ve çevresinde ceviz genotiplerinin meyve özelliklerinin belirlenmesi turan karadeniz,muhammed mustafa mancak,tuba bak,emrah güler,ferhad muradoğlu,levent kırca 4. ulusal ceviz sempozyumu 2023">
+            Karadeniz, T., Mancak, M.M., Bak, T., Güler, E., Muradoğlu, F., <span class="me">Kırca, L.</span> (2023). <strong>Bilecik Gölpazarı ve Çevresinde Ceviz Genotiplerinin Meyve Özelliklerinin Belirlenmesi.</strong>
+            <em>4. Ulusal Ceviz Sempozyumu</em>, 16.11.2023. <span class="pub-tag" data-i18n-en="Abstract" data-i18n-tr="Özet">Abstract</span>
+          </li>
+          </ol>
+        </section>
       </article>
     </main>
 

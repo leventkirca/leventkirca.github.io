@@ -123,7 +123,7 @@ const trKeyTranslations = {
   "projects.title": "Projeler",
   "projects.subtitle": "Destekli araştırma projeleri",
   "projects.heading": "Araştırma Projeleri",
-  "projects.list": "<li>\n            <strong><span class=\"todo\">Proje adı</span></strong>\n            (<span class=\"todo\">Destekleyen kurum, örn. PAÜ BAP</span>, Türkiye, <span class=\"todo\">yıllar</span>). <span class=\"todo\">Yürütücü / Araştırmacı</span>.\n          </li>",
+  "projects.list": "<li>\n            <strong>İç Ege Bölgesi ile Göller Yöresinde Şalak Kayısı Yetiştiriciliğinin Mukayesesi ve Verimsizliğinin Nedenlerinin Araştırılması</strong>\n            (Pamukkale Üniversitesi Bilimsel Araştırma Projeleri, 2023-2026). Araştırmacı (Yürütücü: Doğru Çokran, B.). Tamamlandı.\n          </li>\n          <li>\n            <strong>Çal ve Bekilli İlçelerinde Yetiştirilen ‘Çalkarası’ Üzüm Popülasyonundan Üstün Özellikli Asmaların Belirlenmesi</strong>\n            (Pamukkale Üniversitesi Bilimsel Araştırma Projeleri, 2023-2025). Araştırmacı (Yürütücü: Karadeniz, T.). Tamamlandı.\n          </li>\n          <li>\n            <strong>Bazı Sofralık Özbekistan ve Avrupa Üzüm Çeşitlerinin Çal (Denizli) Ekolojisine Adaptasyonlarının Belirlenmesi</strong>\n            (Pamukkale Üniversitesi Bilimsel Araştırma Projeleri, 2022-2024). Yürütücü. Tamamlandı.\n          </li>\n          <li>\n            <strong>PAÜ Tavas MYO Otomatik Topraksız Tarım ve Fide/Fidan Üretim Serasının Kurulumu</strong>\n            (Pamukkale Üniversitesi Bilimsel Araştırma Projeleri, 2016-2017). Araştırmacı (Yürütücü: Arslan, Ş.). Tamamlandı.\n          </li>\n          <li>\n            <strong>PAÜ Tavas Meslek Yüksekokulu Fide/Fidan Üretim Serası ve Toprak Bitki Analiz Laboratuvarının Kurulumu</strong>\n            (Pamukkale Üniversitesi Bilimsel Araştırma Projeleri, 2015-2016). Araştırmacı (Yürütücü: Arslan, Ş.). Tamamlandı.\n          </li>",
   "experience.title": "Deneyim",
   "experience.subtitle": "Akademik görevler",
   "experience.list": "<li>\n            <strong>Doçent</strong>, Bahçe Bitkileri Bölümü, Ziraat Fakültesi,\n            Pamukkale Üniversitesi, Denizli (2026-Devam ediyor).\n          </li>\n          <li>\n            <strong>Doktor Öğretim Üyesi</strong>, Bahçe Bitkileri Bölümü, Ziraat Fakültesi,\n            Pamukkale Üniversitesi, Denizli (2022-2026).\n          </li>\n          <li>\n            <strong>Öğretim Görevlisi</strong>, Tavas Meslek Yüksekokulu, Pamukkale Üniversitesi,\n            Denizli (2012-2022).\n          </li>",
@@ -268,20 +268,17 @@ function applyPublicationUiTranslations(lang) {
 }
 
 function initPublicationFilters() {
-  const list = document.querySelector(".pub-list");
   const searchInput = document.getElementById("pub-search");
   const yearSelect = document.getElementById("pub-year-filter");
-  if (!list || !searchInput || !yearSelect) {
+  const catSelect = document.getElementById("pub-cat-filter");
+  if (!searchInput || !yearSelect) {
     return;
   }
 
-  const items = Array.from(list.querySelectorAll("li"));
+  const items = Array.from(document.querySelectorAll(".pub-list li"));
+  const sections = Array.from(document.querySelectorAll(".pub-section"));
   const years = Array.from(
-    new Set(
-      items
-        .map((item) => item.dataset.year)
-        .filter((year) => year && year !== "0")
-    )
+    new Set(items.map((item) => item.dataset.year).filter((year) => year && year !== "0"))
   ).sort((a, b) => Number(b) - Number(a));
 
   years.forEach((year) => {
@@ -292,16 +289,21 @@ function initPublicationFilters() {
   });
 
   const runFilter = () => {
-    const query = searchInput.value.trim().toLowerCase();
+    const query = searchInput.value.trim().toLocaleLowerCase("tr");
     const selectedYear = yearSelect.value;
+    const selectedCat = catSelect ? catSelect.value : "all";
 
-    items.forEach((item) => {
-      const haystack = (item.dataset.search || item.textContent).toLowerCase();
-      const year = item.dataset.year || "";
-
-      const matchQuery = !query || haystack.includes(query);
-      const matchYear = selectedYear === "all" || year === selectedYear;
-      item.hidden = !(matchQuery && matchYear);
+    sections.forEach((section) => {
+      const catOk = selectedCat === "all" || section.dataset.cat === selectedCat;
+      let visible = 0;
+      section.querySelectorAll("li").forEach((item) => {
+        const haystack = (item.dataset.search || item.textContent).toLocaleLowerCase("tr");
+        const matchQuery = !query || haystack.includes(query);
+        const matchYear = selectedYear === "all" || item.dataset.year === selectedYear;
+        item.hidden = !(catOk && matchQuery && matchYear);
+        if (!item.hidden) visible += 1;
+      });
+      section.hidden = visible === 0;
     });
 
     updatePubCountLabel(document.documentElement.lang || "en");
@@ -309,31 +311,33 @@ function initPublicationFilters() {
 
   searchInput.addEventListener("input", runFilter);
   yearSelect.addEventListener("change", runFilter);
+  if (catSelect) catSelect.addEventListener("change", runFilter);
 
   runFilter();
 }
 
 function updatePubCountLabel(lang) {
-  const list = document.querySelector(".pub-list");
   const counter = document.getElementById("pub-count");
-  if (!list || !counter) {
+  if (!counter) {
     return;
   }
-  const allItems = Array.from(list.querySelectorAll("li"));
+  const allItems = Array.from(document.querySelectorAll(".pub-list li"));
   const visibleItems = allItems.filter((item) => !item.hidden).length;
   counter.textContent =
     lang === "tr"
-      ? `${visibleItems} / ${allItems.length} yayın gösteriliyor`
-      : `Showing ${visibleItems} of ${allItems.length} publications`;
+      ? `${visibleItems} / ${allItems.length} kayıt gösteriliyor`
+      : `Showing ${visibleItems} of ${allItems.length} records`;
 }
 
 function updatePublicationSubtitle(lang) {
-  const list = document.querySelector(".pub-list");
-  const subtitle = document.querySelector("article.content .subtitle");
-  if (!list || !subtitle) {
+  if (!document.getElementById("pub-search")) {
     return;
   }
-  const total = list.querySelectorAll("li").length;
+  const subtitle = document.querySelector("article.content .subtitle");
+  if (!subtitle) {
+    return;
+  }
+  const total = document.querySelectorAll(".pub-list li").length;
   subtitle.textContent =
     lang === "tr" ? `Tam liste (${total} kayıt)` : `Complete list (${total} records)`;
 }

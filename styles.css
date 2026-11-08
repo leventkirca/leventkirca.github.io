@@ -401,3 +401,33 @@ li {
     min-width: min(100%, 260px);
   }
 }
+
+/* Publication categories and tags */
+.pub-section h2 {
+  margin-top: 28px;
+}
+
+.pub-section[hidden] {
+  display: none;
+}
+
+.pub-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 3px 7px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.me {
+  font-weight: 600;
+}
+
+.pub-tool-small {
+  min-width: 140px;
+}
