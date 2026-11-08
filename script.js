@@ -132,8 +132,11 @@ const trKeyTranslations = {
   "service.awardsHeading": "Burslar ve Ödüller",
   "service.awardsList": "<li>2013 Yılının En İyi Tarım Haber Sitesi Ödülü, Türkiye Ziraat Mühendisleri Derneği, 2013.</li>",
   "service.reviewHeading": "Editörlük ve Hakemlik Faaliyetleri",
-  "service.intlLabel": "<strong>Uluslararası Dergiler</strong>",
-  "service.natLabel": "<strong>Ulusal Dergiler</strong>"
+  "service.reviewSummary": "13 uluslararası dergide 32 makale hakemliği (2024-2026). Parantez içinde hakemlik sayısı verilmiştir.",
+  "service.pub0": "<strong>Springer Nature</strong>",
+  "service.pub1": "<strong>Elsevier</strong>",
+  "service.pub2": "<strong>Wiley</strong>",
+  "service.pub3": "<strong>Diğer Yayınevleri</strong>"
 };
 
 initLanguageToggle();
