@@ -221,6 +221,7 @@ a:hover {
 .sidebar .contact-list a[href*="scholar.google"]::before { content: "GS"; }
 .sidebar .contact-list a[href*="orcid.org"]::before { content: "iD"; }
 .sidebar .contact-list a[href*="researchgate.net"]::before { content: "RG"; }
+.sidebar .contact-list a[href*="sciprofiles"]::before { content: "SP"; }
 .sidebar .contact-list a[href*="yok.gov.tr"]::before { content: "YÖK"; font-size: 0.48rem; }
 .sidebar .contact-list a[href*="dergipark"]::before { content: "DP"; }
 .sidebar .contact-list a[href*="scopus.com"]::before { content: "Sc"; }
@@ -500,4 +501,34 @@ li {
   color: var(--muted);
   font-size: 0.88rem;
   white-space: nowrap;
+}
+
+/* Social media icons under the name */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: -4px 0 16px;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  color: var(--accent-dark);
+  background: #ffffff;
+}
+
+.social-links a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.social-links svg {
+  width: 17px;
+  height: 17px;
 }
