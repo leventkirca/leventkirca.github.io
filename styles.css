@@ -1,0 +1,342 @@
+:root {
+  --bg: #f5f6f8;
+  --card: #ffffff;
+  --ink: #1a1f2a;
+  --muted: #606b7d;
+  --line: #dce1e8;
+  --accent: #2a4d7a;
+  --max-width: 1120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent);
+}
+
+.masthead {
+  border-bottom: 1px solid var(--line);
+  background: #fbfcfe;
+}
+
+.masthead-inner {
+  width: min(var(--max-width), calc(100vw - 32px));
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  min-height: 66px;
+}
+
+.site-title {
+  font-family: "Newsreader", serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.top-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 0;
+}
+
+.top-nav a.is-active,
+.top-nav a:hover,
+.top-nav a:focus-visible {
+  color: var(--ink);
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.lang-btn {
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--muted);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.lang-btn.is-active {
+  color: #ffffff;
+  border-color: var(--ink);
+  background: var(--ink);
+}
+
+.main-grid {
+  width: min(var(--max-width), calc(100vw - 32px));
+  margin: 20px auto 32px;
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 28px;
+}
+
+.sidebar,
+.content {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 14px;
+  align-self: start;
+  padding: 18px;
+}
+
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.name {
+  margin: 0;
+  font-family: "Newsreader", serif;
+  font-size: 1.55rem;
+  line-height: 1.15;
+}
+
+.role {
+  margin: 8px 0 14px;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.contact-list li {
+  color: var(--muted);
+}
+
+.sidebar .contact-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar .contact-list a::before {
+  content: "L";
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  background: #7b8698;
+  flex-shrink: 0;
+}
+
+.sidebar .contact-list a[href^="mailto:"]::before {
+  content: "@";
+  background: #8d2d48;
+}
+
+.sidebar .contact-list a[href*="pau.edu.tr"]::before {
+  content: "PAU";
+  font-size: 0.48rem;
+  letter-spacing: 0.02em;
+  background: #2a4d7a;
+}
+
+.sidebar .contact-list a[href*="linkedin.com"]::before {
+  content: "in";
+  background: #0a66c2;
+}
+
+.sidebar .contact-list a[href*="scholar.google"]::before {
+  content: "GS";
+  background: #1a73e8;
+}
+
+.sidebar .contact-list a[href*="orcid.org"]::before {
+  content: "ID";
+  background: #a6ce39;
+  color: #1a1f2a;
+}
+
+.sidebar .contact-list a[href*="scopus.com"]::before {
+  content: "Sc";
+  background: #f36f21;
+}
+
+.content {
+  padding: 22px 26px;
+}
+
+h1,
+h2 {
+  font-family: "Newsreader", serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+}
+
+h2 {
+  margin: 20px 0 8px;
+  font-size: 1.62rem;
+}
+
+.subtitle {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+p,
+li {
+  font-size: 1.04rem;
+}
+
+.pub-list {
+  margin-top: 8px;
+  display: grid;
+  gap: 10px;
+}
+
+.pub-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+  margin: 10px 0 14px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.pub-tool {
+  display: grid;
+  gap: 5px;
+  min-width: 220px;
+}
+
+.pub-tool span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pub-tool input,
+.pub-tool select {
+  border: 1px solid #ccd5e1;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 0.94rem;
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.pub-count {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.footer {
+  width: min(var(--max-width), calc(100vw - 32px));
+  margin: 0 auto 26px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 920px) {
+  .masthead-inner {
+    flex-wrap: wrap;
+    padding: 8px 0;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .pub-tool {
+    min-width: min(100%, 260px);
+  }
+}
+
+.sidebar .contact-list a[href*="researchgate.net"]::before {
+  content: "RG";
+  background: #00b3a4;
+}
+
+.sidebar .contact-list a[href*="yok.gov.tr"]::before {
+  content: "YÖK";
+  font-size: 0.45rem;
+  background: #b0182d;
+}
+
+.sidebar .contact-list a[href*="dergipark"]::before {
+  content: "DP";
+  background: #2b6cb0;
+}
+
+/* Yellow marks = information still to be filled in. Remove the span when done. */
+.todo {
+  background: #fff3b0;
+  padding: 0 3px;
+  border-radius: 3px;
+}

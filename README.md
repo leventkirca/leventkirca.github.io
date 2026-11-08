@@ -2,7 +2,7 @@
 
 Academic homepage of Levent Kırca.
 
-- Profile, menu and links: `assets/site.js`
-- Publications: `assets/publications.js`
-- Style: `assets/style.css`
-- Photo: `assets/photo.jpg`
+- Pages: `index.html`, `cv/`, `research/`, `publications/`, `teaching/`, `projects/`, `experience/`, `service/`
+- Style: `styles.css`
+- Language switch (EN/TR) and Turkish texts: `script.js` (`trKeyTranslations`)
+- Photo: `assets/levent-kirca-photo.jpg`

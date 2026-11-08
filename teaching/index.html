@@ -1,34 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teaching | Levent Kırca</title>
-  <meta name="description" content="Teaching and supervision activities of Levent Kırca.">
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-  <div id="site-header"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teaching | Levent Kırca</title>
+    <meta
+      name="description"
+      content="Teaching and supervision activities of Levent Kırca."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="site-title" href="/">Levent Kırca</a>
+        <nav class="top-nav" aria-label="Main navigation" data-i18n-key="shared.topNavAria" data-i18n-attr="aria-label">
+          <a href="/" data-i18n-en="Home" data-i18n-tr="Ana Sayfa">Home</a>
+          <a href="/cv/" data-i18n-en="CV" data-i18n-tr="CV">CV</a>
+          <a href="/research/" data-i18n-en="Research" data-i18n-tr="Araştırma">Research</a>
+          <a href="/publications/" data-i18n-en="Publications" data-i18n-tr="Yayınlar">Publications</a>
+          <a class="is-active" href="/teaching/" data-i18n-en="Teaching" data-i18n-tr="Eğitim">Teaching</a>
+          <a href="/projects/" data-i18n-en="Projects" data-i18n-tr="Projeler">Projects</a>
+          <a href="/experience/" data-i18n-en="Experience" data-i18n-tr="Deneyim">Experience</a>
+          <a href="/service/" data-i18n-en="Service &amp; Awards" data-i18n-tr="Hizmet ve Ödüller">Service &amp; Awards</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-grid">
+      <aside class="sidebar">
+        <img
+          class="profile-photo"
+          src="/assets/levent-kirca-photo.jpg"
+          alt="Portrait of Levent Kırca"
+          data-i18n-key="shared.photoAlt"
+          data-i18n-attr="alt"
+          onerror="this.onerror=null;this.src='/assets/photo-placeholder.svg';"
+        />
+        <h2 class="name">Levent Kırca, Ph.D.</h2>
+        <p class="role" data-i18n-key="shared.role">Associate Professor of Horticulture</p>
 
-  <main class="container">
-    <h1>Teaching</h1>
-    <p class="subtitle">Teaching and supervision activities</p>
+        <ul class="contact-list">
+          <li><span data-i18n-en="Pamukkale University" data-i18n-tr="Pamukkale Üniversitesi">Pamukkale University</span></li>
+          <li><a href="mailto:lkirca@pau.edu.tr" data-i18n-en="Email" data-i18n-tr="E-posta">Email</a></li>
+          <li><a href="https://pau.edu.tr/lkirca/en" target="_blank" rel="noreferrer" data-i18n-en="University Profile" data-i18n-tr="Üniversite Profili">University Profile</a></li>
+          <li><a href="https://www.pau.edu.tr/" target="_blank" rel="noreferrer" data-i18n-en="University Website" data-i18n-tr="Üniversite Web Sitesi">University Website</a></li>
+          <li><a href="https://scholar.google.com.tr/citations?user=qiIJmgcAAAAJ" target="_blank" rel="noreferrer" data-i18n-en="Google Scholar" data-i18n-tr="Google Scholar">Google Scholar</a></li>
+          <li><a href="https://orcid.org/0000-0003-2496-9513" target="_blank" rel="noreferrer" data-i18n-en="ORCID" data-i18n-tr="ORCID">ORCID</a></li>
+          <li><a href="https://www.researchgate.net/profile/Levent-Kirca-2" target="_blank" rel="noreferrer" data-i18n-en="ResearchGate" data-i18n-tr="ResearchGate">ResearchGate</a></li>
+          <li><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;authorId=C82161FD0BDDA5AB" target="_blank" rel="noreferrer" data-i18n-en="YÖK Akademik" data-i18n-tr="YÖK Akademik">YÖK Akademik</a></li>
+          <li><a href="https://dergipark.org.tr/en/pub/@leventkirca" target="_blank" rel="noreferrer" data-i18n-en="DergiPark" data-i18n-tr="DergiPark">DergiPark</a></li>
+        </ul>
+      </aside>
 
-    <h2>Courses</h2>
-    <ul>
-      <li><span class="todo">Course code</span> – <span class="todo">Course title</span></li>
-      <li><span class="todo">Course code</span> – <span class="todo">Course title</span></li>
-      <li><span class="todo">Course code</span> – Graduation Thesis Preparation (Mezuniyet Tezi Hazırlama)</li>
-    </ul>
+      <article class="content">
+        <h1 data-i18n-key="teaching.title">Teaching</h1>
+        <h2 data-i18n-key="teaching.coursesHeading">Courses</h2>
 
-    <h2>Supervised Theses</h2>
-    <ul>
-      <li><span class="todo">Student name</span>, M.Sc. (<span class="todo">year</span>), Primary Advisor<br>
-        <em class="todo">Thesis title</em></li>
-    </ul>
-  </main>
+        <ul data-i18n-key="teaching.coursesList" data-i18n-html="true">
+          <li><span class="todo">Course code</span> - <span class="todo">Course title</span></li>
+          <li><span class="todo">Course code</span> - Graduation Thesis Preparation</li>
+        </ul>
 
-  <div id="site-footer"></div>
-  <script src="/assets/site.js"></script>
-</body>
+        <h2 data-i18n-key="teaching.thesesHeading">Supervised Theses</h2>
+
+        <ul data-i18n-key="teaching.thesesList" data-i18n-html="true">
+          <li>
+            <span class="todo">Student name</span>, M.Sc. (<span class="todo">year</span>) - Primary Advisor<br />
+            <em><span class="todo">Thesis title</span></em>
+          </li>
+        </ul>
+
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span data-year></span> Levent Kırca</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
 </html>
