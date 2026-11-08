@@ -1,11 +1,14 @@
+/* Levent Kırca — academic homepage */
 :root {
-  --bg: #f5f6f8;
+  --bg: #f6f4ee;
   --card: #ffffff;
-  --ink: #1a1f2a;
-  --muted: #606b7d;
-  --line: #dce1e8;
-  --accent: #2a4d7a;
-  --max-width: 1120px;
+  --ink: #1f2a22;
+  --muted: #5e6a60;
+  --line: #e3dfd3;
+  --accent: #3b6b3f;
+  --accent-dark: #24402a;
+  --accent-soft: #eaf1e8;
+  --max-width: 1100px;
 }
 
 * {
@@ -20,17 +23,25 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 15.5px;
   line-height: 1.7;
 }
 
 a {
   color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(59, 107, 63, 0.3);
 }
 
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- Header ---------- */
 .masthead {
-  border-bottom: 1px solid var(--line);
-  background: #fbfcfe;
+  background: var(--accent-dark);
+  border-bottom: 4px solid #c9a646;
 }
 
 .masthead-inner {
@@ -40,208 +51,268 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 18px;
-  min-height: 66px;
+  min-height: 64px;
 }
 
 .site-title {
-  font-family: "Newsreader", serif;
-  font-size: 1.55rem;
+  font-family: "Lora", serif;
+  font-size: 1.45rem;
   font-weight: 600;
-  text-decoration: none;
-  color: var(--ink);
+  color: #ffffff;
+  border: none;
 }
 
 .top-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 4px;
 }
 
 .top-nav a {
-  color: var(--muted);
-  text-decoration: none;
-  font-weight: 600;
-  padding: 4px 0;
+  color: #d5e2d4;
+  border: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 4px;
 }
 
-.top-nav a.is-active,
 .top-nav a:hover,
 .top-nav a:focus-visible {
-  color: var(--ink);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.top-nav a.is-active {
+  color: var(--accent-dark);
+  background: #ffffff;
 }
 
 .lang-switch {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 0;
   margin-left: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .lang-btn {
-  border: 1px solid var(--line);
-  background: #ffffff;
-  color: var(--muted);
-  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #d5e2d4;
   font: inherit;
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
-  padding: 5px 8px;
+  padding: 6px 9px;
   cursor: pointer;
 }
 
 .lang-btn.is-active {
-  color: #ffffff;
-  border-color: var(--ink);
-  background: var(--ink);
+  color: var(--accent-dark);
+  background: #c9a646;
 }
 
+/* ---------- Layout ---------- */
 .main-grid {
   width: min(var(--max-width), calc(100vw - 32px));
-  margin: 20px auto 32px;
+  margin: 26px auto 34px;
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: 28px;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 26px;
 }
 
 .sidebar,
 .content {
   background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(31, 42, 34, 0.08);
 }
 
 .sidebar {
   position: sticky;
   top: 14px;
   align-self: start;
-  padding: 18px;
+  padding: 24px 20px;
+  text-align: center;
+  border-top: 4px solid var(--accent);
 }
 
 .profile-photo {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 14px;
+  border-radius: 50%;
+  border: 4px solid var(--accent-soft);
+  margin-bottom: 12px;
 }
 
-.name {
+.sidebar .name {
   margin: 0;
-  font-family: "Newsreader", serif;
-  font-size: 1.55rem;
-  line-height: 1.15;
+  padding-left: 0;
+  border-left: none;
+  font-family: "Lora", serif;
+  font-size: 1.4rem;
+  line-height: 1.2;
 }
 
 .role {
-  margin: 8px 0 14px;
-  color: var(--muted);
-  font-size: 0.98rem;
+  margin: 6px 0 16px;
+  color: var(--accent);
+  font-size: 0.93rem;
+  font-weight: 500;
 }
 
 .contact-list {
   margin: 0;
-  padding: 0;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--line);
   list-style: none;
   display: grid;
-  gap: 6px;
-  font-size: 0.95rem;
+  gap: 4px;
+  font-size: 0.92rem;
+  text-align: left;
 }
 
 .contact-list li {
   color: var(--muted);
 }
 
+.contact-list li:first-child {
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
 .sidebar .contact-list a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  padding: 4px 6px;
+  border: none;
+  border-radius: 4px;
+  color: var(--ink);
+}
+
+.sidebar .contact-list a:hover {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
 }
 
 .sidebar .contact-list a::before {
   content: "L";
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 999px;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 5px;
   display: inline-grid;
   place-items: center;
-  font-size: 0.62rem;
+  font-size: 0.6rem;
   font-weight: 700;
   line-height: 1;
   color: #ffffff;
-  background: #7b8698;
+  background: var(--accent);
   flex-shrink: 0;
 }
 
-.sidebar .contact-list a[href^="mailto:"]::before {
-  content: "@";
-  background: #8d2d48;
-}
+.sidebar .contact-list a[href*="pau.edu.tr"]::before { content: "PAÜ"; font-size: 0.5rem; }
+.sidebar .contact-list a[href*="scholar.google"]::before { content: "GS"; }
+.sidebar .contact-list a[href*="orcid.org"]::before { content: "iD"; }
+.sidebar .contact-list a[href*="researchgate.net"]::before { content: "RG"; }
+.sidebar .contact-list a[href*="yok.gov.tr"]::before { content: "YÖK"; font-size: 0.48rem; }
+.sidebar .contact-list a[href*="dergipark"]::before { content: "DP"; }
+.sidebar .contact-list a[href*="scopus.com"]::before { content: "Sc"; }
+.sidebar .contact-list a[href*="linkedin.com"]::before { content: "in"; }
+.sidebar .contact-list a[href^="mailto:"]::before { content: "@"; font-size: 0.85rem; }
 
-.sidebar .contact-list a[href*="pau.edu.tr"]::before {
-  content: "PAU";
-  font-size: 0.48rem;
-  letter-spacing: 0.02em;
-  background: #2a4d7a;
-}
-
-.sidebar .contact-list a[href*="linkedin.com"]::before {
-  content: "in";
-  background: #0a66c2;
-}
-
-.sidebar .contact-list a[href*="scholar.google"]::before {
-  content: "GS";
-  background: #1a73e8;
-}
-
-.sidebar .contact-list a[href*="orcid.org"]::before {
-  content: "ID";
-  background: #a6ce39;
-  color: #1a1f2a;
-}
-
-.sidebar .contact-list a[href*="scopus.com"]::before {
-  content: "Sc";
-  background: #f36f21;
-}
-
+/* ---------- Content ---------- */
 .content {
-  padding: 22px 26px;
+  padding: 28px 34px 32px;
 }
 
 h1,
 h2 {
-  font-family: "Newsreader", serif;
+  font-family: "Lora", serif;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h1 {
-  margin: 0 0 8px;
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin: 0 0 6px;
+  font-size: clamp(1.8rem, 3.6vw, 2.4rem);
+  color: var(--accent-dark);
 }
 
 h2 {
-  margin: 20px 0 8px;
-  font-size: 1.62rem;
+  margin: 30px 0 10px;
+  font-size: 1.35rem;
+  padding-left: 12px;
+  border-left: 4px solid #c9a646;
 }
 
 .subtitle {
-  margin: 0 0 12px;
+  margin: 0 0 18px;
   color: var(--muted);
-  font-size: 1.12rem;
+  font-size: 1.05rem;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
 }
 
 p,
 li {
-  font-size: 1.04rem;
+  font-size: 1rem;
 }
 
+.content ul {
+  padding-left: 20px;
+}
+
+.content ul li {
+  margin-bottom: 6px;
+}
+
+.content ul li::marker {
+  color: var(--accent);
+}
+
+/* ---------- Publications ---------- */
 .pub-list {
+  list-style: none;
+  padding: 0;
   margin-top: 8px;
   display: grid;
   gap: 10px;
+  counter-reset: pub;
+}
+
+.pub-list li {
+  counter-increment: pub;
+  position: relative;
+  padding: 10px 14px 10px 52px;
+  background: #fbfaf7;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.pub-list li::before {
+  content: counter(pub);
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+}
+
+.pub-list li[hidden] {
+  display: none;
 }
 
 .pub-tools {
@@ -249,11 +320,10 @@ li {
   flex-wrap: wrap;
   gap: 12px;
   align-items: end;
-  margin: 10px 0 14px;
-  padding: 12px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: #f8fafc;
+  margin: 10px 0 16px;
+  padding: 14px;
+  border-radius: 6px;
+  background: var(--accent-soft);
 }
 
 .pub-tool {
@@ -263,18 +333,18 @@ li {
 }
 
 .pub-tool span {
-  color: var(--muted);
-  font-size: 0.9rem;
+  color: var(--accent-dark);
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
 .pub-tool input,
 .pub-tool select {
-  border: 1px solid #ccd5e1;
-  border-radius: 8px;
+  border: 1px solid #c8d6c5;
+  border-radius: 5px;
   padding: 8px 10px;
   font: inherit;
-  font-size: 0.94rem;
+  font-size: 0.93rem;
   background: #ffffff;
   color: var(--ink);
 }
@@ -282,27 +352,36 @@ li {
 .pub-count {
   margin: 0;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 600;
 }
 
+/* ---------- Footer ---------- */
 .footer {
   width: min(var(--max-width), calc(100vw - 32px));
   margin: 0 auto 26px;
-  padding-top: 10px;
+  padding-top: 12px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .footer p {
   margin: 0;
 }
 
+/* Yellow marks = information still to be filled in. Remove the span when done. */
+.todo {
+  background: #fff3b0;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
 @media (max-width: 920px) {
   .masthead-inner {
     flex-wrap: wrap;
-    padding: 8px 0;
+    padding: 10px 0;
   }
 
   .main-grid {
@@ -313,30 +392,11 @@ li {
     position: static;
   }
 
+  .content {
+    padding: 22px 20px;
+  }
+
   .pub-tool {
     min-width: min(100%, 260px);
   }
-}
-
-.sidebar .contact-list a[href*="researchgate.net"]::before {
-  content: "RG";
-  background: #00b3a4;
-}
-
-.sidebar .contact-list a[href*="yok.gov.tr"]::before {
-  content: "YÖK";
-  font-size: 0.45rem;
-  background: #b0182d;
-}
-
-.sidebar .contact-list a[href*="dergipark"]::before {
-  content: "DP";
-  background: #2b6cb0;
-}
-
-/* Yellow marks = information still to be filled in. Remove the span when done. */
-.todo {
-  background: #fff3b0;
-  padding: 0 3px;
-  border-radius: 3px;
 }
