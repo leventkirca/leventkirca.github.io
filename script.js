@@ -128,9 +128,9 @@ const trKeyTranslations = {
   "service.title": "Hizmet ve Ödüller",
   "service.subtitle": "Akademik hizmet, hakemlik ve ödüller",
   "service.serviceHeading": "Akademik Hizmetler",
-  "service.serviceList": "<li><strong><span class=\"todo\">Görev</span></strong>, <span class=\"todo\">Birim, Pamukkale Üniversitesi</span> (<span class=\"todo\">yıllar</span>).</li>",
+  "service.serviceList": "<li><strong>Dekan Yardımcısı</strong>, Ziraat Fakültesi, Pamukkale Üniversitesi (2022-Devam ediyor).</li>\n          <li><strong>Uluslararası İlişkiler Fakülte Koordinatörü</strong>, Ziraat Fakültesi, Pamukkale Üniversitesi (2022-Devam ediyor).</li>\n          <li><strong>Fakülte Yönetim Kurulu Üyesi</strong>, Ziraat Fakültesi, Pamukkale Üniversitesi (2023-Devam ediyor).</li>\n          <li><strong>Kalite Kurulu Üyesi</strong>, Ziraat Fakültesi, Pamukkale Üniversitesi (2024-Devam ediyor).</li>\n          <li><strong>Kalite Komisyonu Üyesi</strong>, Ziraat Fakültesi, Pamukkale Üniversitesi (2022-Devam ediyor).</li>\n          <li><strong>Yüksekokul Müdürü</strong>, Tavas Meslek Yüksekokulu, Pamukkale Üniversitesi (2015-2016).</li>\n          <li><strong>Yüksekokul Müdür Yardımcısı</strong>, Tavas Meslek Yüksekokulu, Pamukkale Üniversitesi (2014-2015, 2017-2022).</li>\n          <li><strong>Yüksekokul Yönetim Kurulu Üyesi</strong>, Tavas Meslek Yüksekokulu, Pamukkale Üniversitesi (2017-2022).</li>\n          <li><strong>Bölüm Başkanı</strong>, Bitkisel ve Hayvansal Üretim Bölümü, Tavas Meslek Yüksekokulu, Pamukkale Üniversitesi (2014-2022).</li>\n          <li><strong>Bölüm Başkan Yardımcısı</strong>, Bitkisel ve Hayvansal Üretim Bölümü, Tavas Meslek Yüksekokulu, Pamukkale Üniversitesi (2013-2014).</li>\n          <li><strong>Program Başkanı</strong>, Tıbbi ve Aromatik Bitkiler Programı, Tavas Meslek Yüksekokulu, Pamukkale Üniversitesi (2013-2022).</li>",
   "service.awardsHeading": "Burslar ve Ödüller",
-  "service.awardsList": "<li><span class=\"todo\">Ödül, veren kurum, yıl</span></li>",
+  "service.awardsList": "<li>2013 Yılının En İyi Tarım Haber Sitesi Ödülü, Türkiye Ziraat Mühendisleri Derneği, 2013.</li>",
   "service.reviewHeading": "Editörlük ve Hakemlik Faaliyetleri",
   "service.intlLabel": "<strong>Uluslararası Dergiler</strong>",
   "service.natLabel": "<strong>Ulusal Dergiler</strong>"
