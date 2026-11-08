@@ -350,3 +350,30 @@ function normalizePath(pathname) {
   }
   return pathname;
 }
+
+// Back-to-top button (appears after scrolling down)
+(function initBackToTop() {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "to-top";
+  btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 14l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const setLabel = () => {
+    const label = document.documentElement.lang === "tr" ? "Yukarı git" : "Back to top";
+    btn.setAttribute("aria-label", label);
+    btn.title = label;
+  };
+  setLabel();
+  document.body.appendChild(btn);
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  const toggle = () => {
+    btn.classList.toggle("is-visible", window.scrollY > 400);
+  };
+  window.addEventListener("scroll", toggle, { passive: true });
+  toggle();
+
+  document.querySelectorAll(".lang-btn").forEach((b) => b.addEventListener("click", setLabel));
+})();
