@@ -94,7 +94,7 @@ const trKeyTranslations = {
   "shared.photoAlt": "Levent Kırca portresi",
   "shared.topNavAria": "Ana gezinme",
   "home.subtitle": "Bahçe Bitkileri Doçenti",
-  "home.address": "Bahçe Bitkileri Bölümü, Ziraat Fakültesi,\n          <a href=\"https://www.pau.edu.tr/\" target=\"_blank\" rel=\"noreferrer\">Pamukkale Üniversitesi</a>\n          <br />\n          Yerleşkesi, 20600 Çivril, Denizli, Türkiye",
+  "home.address": "Bahçe Bitkileri Bölümü, Ziraat Fakültesi,\n          <a href=\"https://www.pau.edu.tr/\" target=\"_blank\" rel=\"noreferrer\">Pamukkale Üniversitesi</a> Yerleşkesi\n          <br />\n          20600 Çivril, Denizli, Türkiye",
   "home.bio1": "Meyve genetik kaynakları üzerine çalışıyorum. Çalışmalarım yabani ve yerel meyve genotiplerinin pomolojik ve biyokimyasal karakterizasyonunu, hasat sonrası meyve kalitesini ve anaç–kalem ilişkilerini kapsamaktadır.",
   "home.bio2": "Arazi çalışmalarımın çoğu Denizli ve Ege Bölgesi'nde yürütülmektedir. Fındık, badem, ceviz, armut, kiraz, ayva, kuşburnu ve kızılcık üzerinde çalışıyorum. Son çalışmalarım meyve genotiplerinde fenolik bileşikler, yağ asitleri, mineraller ve antioksidan aktivite üzerinde yoğunlaşmaktadır.",
   "home.quickLinksHeading": "Hızlı Bağlantılar",
