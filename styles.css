@@ -217,6 +217,7 @@ a:hover {
 }
 
 .sidebar .contact-list a[href*="pau.edu.tr"]::before { content: "PAÜ"; font-size: 0.5rem; }
+.sidebar .contact-list a[href*="akbis.pau.edu.tr"]::before { content: "AK"; }
 .sidebar .contact-list a[href*="scholar.google"]::before { content: "GS"; }
 .sidebar .contact-list a[href*="orcid.org"]::before { content: "iD"; }
 .sidebar .contact-list a[href*="researchgate.net"]::before { content: "RG"; }
