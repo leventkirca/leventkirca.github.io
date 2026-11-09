@@ -135,10 +135,14 @@ const trKeyTranslations = {
   "service.awardsHeading": "Burslar ve Ödüller",
   "service.awardsList": "<li>2013 Yılının En İyi Tarım Haber Sitesi Ödülü, Türkiye Ziraat Mühendisleri Derneği, 2013.</li>",
   "service.reviewHeading": "Editörlük ve Hakemlik Faaliyetleri",
+  "service.editorLabel": "Editör",
+  "service.boardLabel": "Yayın Kurulu Üyesi",
+  "service.reviewerLabel": "Hakemlik",
   "service.pub0": "<strong>Springer Nature</strong>",
   "service.pub1": "<strong>Elsevier</strong>",
   "service.pub2": "<strong>Wiley</strong>",
-  "service.pub3": "<strong>Diğer Yayınevleri</strong>"
+  "service.pub3": "<strong>Diğer Uluslararası Yayınevleri</strong>",
+  "service.natLabel2": "<strong>Ulusal Dergiler (DergiPark)</strong>"
 };
 
 initLanguageToggle();

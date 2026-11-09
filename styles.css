@@ -593,3 +593,11 @@ li {
 .collab-box p {
   margin: 0;
 }
+
+.content h3 {
+  font-family: "Lora", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin: 20px 0 6px;
+}
