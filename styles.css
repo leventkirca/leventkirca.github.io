@@ -571,3 +571,25 @@ li {
     bottom: 14px;
   }
 }
+
+/* Collaboration call-out on the home page */
+.collab-box {
+  margin: 22px 0 6px;
+  padding: 14px 18px;
+  background: var(--accent-soft);
+  border-left: 4px solid #c9a646;
+  border-radius: 0 6px 6px 0;
+}
+
+.collab-box strong {
+  display: block;
+  font-family: "Lora", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin-bottom: 4px;
+}
+
+.collab-box p {
+  margin: 0;
+}
